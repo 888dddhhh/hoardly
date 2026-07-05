@@ -1,0 +1,148 @@
+.auth-panel {
+  width: min(460px, calc(100vw - 40px));
+  color: var(--text, var(--card-foreground, #fff));
+}
+
+.auth-panel.compact {
+  width: 330px;
+}
+
+.auth-linear-header {
+  display: grid;
+  justify-items: center;
+  gap: 26px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.auth-linear-header img {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  object-fit: contain;
+}
+
+.auth-linear-header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.auth-linear-body {
+  display: grid;
+  gap: 18px;
+}
+
+.auth-linear-actions {
+  display: grid;
+  gap: 14px;
+}
+
+.auth-linear-actions > button {
+  width: 100%;
+  height: 54px;
+  border-radius: 999px;
+  font-size: 15px;
+}
+
+.auth-google-button {
+  background: #6268df !important;
+  color: #fff !important;
+}
+
+.auth-linear-actions > p {
+  margin: -4px 0 12px;
+  color: var(--subtle, var(--muted-foreground, #888));
+  font-size: 13px;
+  text-align: center;
+}
+
+.auth-form {
+  display: grid;
+  gap: 12px;
+}
+
+.auth-field {
+  display: grid;
+  gap: 7px;
+}
+
+.auth-password-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.auth-form-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.auth-form-links button {
+  height: auto;
+  padding: 0;
+  font-size: 13px;
+}
+
+.auth-qr {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  border: 1px dashed var(--border, #333);
+  border-radius: 18px;
+  padding: 16px;
+}
+
+.auth-linear-footer {
+  color: var(--subtle, var(--muted-foreground, #888));
+  font-size: 14px;
+  text-align: center;
+}
+
+.auth-linear-footer button {
+  border: 0;
+  background: transparent;
+  color: var(--text, var(--foreground, #fff));
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+}
+
+.auth-linear-back {
+  justify-self: center;
+}
+
+.auth-qr > div {
+  display: grid;
+  place-items: center;
+  width: 118px;
+  height: 118px;
+  border-radius: 18px;
+  background: var(--muted, #222);
+  color: var(--subtle, #aaa);
+}
+
+.auth-qr p {
+  margin: 0;
+  color: var(--subtle, #aaa);
+  font-size: 12px;
+}
+
+.auth-page {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  background: var(--page-bg, #080808);
+  padding: 24px;
+}
+
+.auth-popover {
+  position: absolute;
+  top: 64px;
+  right: 12px;
+  z-index: 20;
+}

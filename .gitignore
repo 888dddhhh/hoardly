@@ -1,0 +1,10 @@
+node_modules/
+.wxt/
+.output/
+.env
+.env.*
+!.env.example
+dist/
+.cursor/
+*.zip
+.DS_Store
